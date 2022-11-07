@@ -1,28 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to MAURICIO MENDOZA DESIGN"/>
+    <BarraNavegacion />
+    <HomePage />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BarraNavegacion from './components/BarraNavegacion.vue'
+import HomePage from './vistas/Inicio.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    BarraNavegacion,
+    HomePage
   }
 }
 </script>
 
-<style lang="scss" scoped>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  @import './assets/app.scss';
 </style>

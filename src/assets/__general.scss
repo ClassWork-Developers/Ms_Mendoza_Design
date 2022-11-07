@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  background-color: $secundario;
+}
+
+// Texto
+.h1 {
+  color: $primario_base;
+  font-size: 3rem;
+}
+.h4 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+.text {
+  color: $primario-base;
+
+  &__special {
+    background: linear-gradient(90deg, #E3FC00 60.04%, #49FF50 64.85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  &__description{
+    color: $primario-base;
+    font-size: 2rem;
+  }
+}
+
+// Botones
+.btn {
+  padding: 1rem 2rem;
+  margin: 1rem;
+  display: block;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  font-weight: bold;
+  color: $secundario;
+
+  &.ghost-gradient {
+    background: none;
+    border: solid;
+    border-image-slice: 1;
+    color: linear-gradient(to left, $primario, $primario-base);
+    border-image-source: linear-gradient(to left, $primario, $primario-base);
+
+    & .ghost-text {
+      background: linear-gradient(90deg, #E3FC00 61.04%, #49FF50 96.85%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+
+  &.primary {
+    border: none;
+    background:  linear-gradient(120deg, $primario-base, $primario);
+    font-weight: bold;
+  }
+}
+
+// Barra de navegación
+.nav-bar {
+  text-transform: uppercase;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  font-size: 1.3rem;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  display: flex;
+  list-style: none;
+  background-image: linear-gradient(to top, #00000000, #000000);
+  width: 100%;
+  z-index: 100;
+}
+
+// Landing page
+.landing-page {
+  background-size: contain;
+  align-items: end;
+  display: flex;
+  height: 50vh;
+  background-image: url("/src/assets/images/navbar-image.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+
+  & .background{
+    background: rgba(0, 0, 0, 0.54);
+    filter: blur(54px);
+    position: absolute;
+    width: 523px;
+    height: 257px;
+  }
+
+  &__content {
+    padding: 1rem;
+    margin: 1rem 6rem;
+    padding-bottom: 1rem;
+    position: relative;
+  }
+
+  &__logo {
+    position: absolute;
+    right: 4rem;
+    bottom: -5rem;
+  }
+}
+
+// Contenedores
+.container {
+  margin-top: 3rem;
+  &__benefits{
+
+    & .preview-benefits{
+      width: 219.05px;
+      height: 273.31px;
+      transform: rotate(9deg);
+    }
+  }
+}
