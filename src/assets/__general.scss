@@ -17,7 +17,7 @@ html {
   font-size: 3.5rem;
   text-align: center;
 }
-.text {
+.text, p {
   color: $primario-base;
 
   &__special {
@@ -121,8 +121,12 @@ html {
 .container {
   margin-top: 3rem;
   &__benefits{
+    margin: 3rem;
+    display: flex;
+    align-items: center;
 
     & .preview-benefits{
+      margin: 0 2rem;
       width: 219.05px;
       height: 273.31px;
       transform: rotate(9deg);

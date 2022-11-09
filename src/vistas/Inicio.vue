@@ -24,9 +24,20 @@
         <i class="logo__big" />
       </div>
     </div>
-    <div class="container">
+    <div class="container d-flex column align-items-center">
       <p class="text__special h4">¿Qué puedo hacer por ti?</p>
       <div class="container__benefits">
+        <div class="preview-benefits">
+          <img class="img-width" src="../assets/images/image1.jpg" alt="">
+        </div>
+        <div>
+          <p class="text__description"> Texto descriptivo</p>
+        </div>
+      </div>
+      <div class="container__benefits">
+        <div>
+          <p class="text__description"> Texto descriptivo</p>
+        </div>
         <div class="preview-benefits">
           <img class="img-width" src="../assets/images/image1.jpg" alt="">
         </div>
