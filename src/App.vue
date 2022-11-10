@@ -1,19 +1,17 @@
 <template>
   <div id="app">
     <BarraNavegacion />
-    <HomePage />
+    <router-view/>
   </div>
 </template>
 
 <script>
 import BarraNavegacion from './components/BarraNavegacion.vue'
-import HomePage from './vistas/Inicio.vue'
 
 export default {
   name: 'App',
   components: {
-    BarraNavegacion,
-    HomePage
+    BarraNavegacion
   }
 }
 </script>

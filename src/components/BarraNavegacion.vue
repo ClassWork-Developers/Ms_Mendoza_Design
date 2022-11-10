@@ -4,7 +4,9 @@
       <li>
         <i class="logo" />
       </li>
-      <li>Inicio</li>
+      <li>
+        <router-link to="/">Inicio</router-link>
+      </li>
       <li>Contenido</li>
       <li>Acerca de mi</li>
       <li class="redes">
