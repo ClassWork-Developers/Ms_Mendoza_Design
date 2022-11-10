@@ -15,7 +15,7 @@
           </div>
           <div>
             <button class="btn primary">
-              Contactame
+              Contáctame
             </button>
           </div>
         </div>
