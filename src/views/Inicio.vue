@@ -1,22 +1,24 @@
 <template>
   <section>
     <div class="landing-page">
-      <span class="landing-page__content background"></span>
-      <div class="landing-page__content">
-        <p class="h1 bold">Ms_Mendoza_Design</p>
-        <p class="text__description">asdasdasd</p>
-        <div class="d-flex align-items-center">
-          <div>
-            <button class="btn ghost-gradient">
-              <span class="ghost-text">
-                Ver contenido
-              </span>
-            </button>
-          </div>
-          <div>
-            <button class="btn primary">
-              Contáctame
-            </button>
+      <div>
+        <span class="landing-page__content background"></span>
+        <div class="landing-page__content">
+          <p class="h1">Ms_Mendoza_Design</p>
+          <p class="h5">asdasdasd</p>
+          <div class="d-flex align-items-center">
+            <div>
+              <button class="btn ghost-gradient">
+                <span class="ghost-text">
+                  Ver contenido
+                </span>
+              </button>
+            </div>
+            <div>
+              <button class="btn primary">
+                Contáctame
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -25,23 +27,38 @@
       </div>
     </div>
     <div class="container d-flex column align-items-center">
-      <p class="text__special h4">¿Qué puedo hacer por ti?</p>
-      <div class="container__benefits">
-        <div class="preview-benefits">
-          <img class="img-width" src="../assets/images/image1.jpg" alt="">
+      <p class="h3 text-special align-center mb-3">¿Qué puedo hacer por ti?</p>
+      <div class="container-benefits">
+        <div class="container-benefits__image align-self-start">
+            <img class="img-width" src="../assets/images/image1.jpg" alt="">
         </div>
-        <div>
-          <p class="text__description"> Texto descriptivo</p>
+        <div class="container__descriptions">
+          <div>
+            <p class="h5">Texto descriptivo</p>
+          </div>
+          <div class="align-right">
+            <p class="small-block">
+              Diseños creativos con tu
+            </p>
+            <p class="h5 text-special text-uppercase">
+              perfil profesional
+            </p>
+            <p class="text-container">
+              Déjame desatar mi creatividad con una imagen tuya incluso para fines vocacionales
+            </p>
+          </div>
+        </div>
+        <div class="container-benefits__image align-self-end">
+          <img class="img-width" src="../assets/images/image3.jpg" alt="">
+          <img class="img-width preview-absolute" src="../assets/images/image2.jpg" alt="">
         </div>
       </div>
-      <div class="container__benefits">
-        <div>
-          <p class="text__description"> Texto descriptivo</p>
-        </div>
-        <div class="preview-benefits">
-          <img class="img-width" src="../assets/images/image1.jpg" alt="">
-        </div>
-      </div>
+    </div>
+    <p class="h3 special">
+      "I made designs with the heart"
+    </p>
+    <div class="mx-auto w-auto">
+      <img class="img-width" src="../assets/images/image4.png" alt="">
     </div>
   </section>
 </template>

@@ -1,21 +1,27 @@
 <template>
-  <section>
-    <ul class="nav-bar text">
-      <li>
+  <section :class="['nav-bar', HomePage ? 'fixed' : 'sticky']">
+    <div class="nav-bar__container">
+      <div>
         <i class="logo" />
-      </li>
-      <li>
-        <router-link to="/">Inicio</router-link>
-      </li>
-      <li>Contenido</li>
-      <li>Acerca de mi</li>
-      <li class="redes">
-        <font-awesome-icon class="p-1" icon="fa-brands fa-facebook" />
-        <font-awesome-icon class="p-1" icon="fa-brands fa-twitter" />
-        <font-awesome-icon class="p-1" icon="fa-brands fa-telegram" />
-        <font-awesome-icon class="p-1" icon="fa-brands fa-whatsapp" />
-      </li>
-    </ul>
+      </div>
+      <div class="d-flex align-items-center">
+        <p class="px-2">
+          <router-link to="/">Inicio</router-link>
+        </p>
+        <p class="px-2">
+          Contenido
+        </p>
+        <p class="px-2">
+          Acerca de mi
+        </p>
+        <p class="redes">
+          <font-awesome-icon class="p-1" icon="fa-brands fa-facebook" />
+          <font-awesome-icon class="p-1" icon="fa-brands fa-twitter" />
+          <font-awesome-icon class="p-1" icon="fa-brands fa-telegram" />
+          <font-awesome-icon class="p-1" icon="fa-brands fa-whatsapp" />
+        </p>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -23,6 +29,10 @@
 export default {
   name: 'BarraNavegacion',
   props: {
+    HomePage: {
+      type: Boolean,
+      default: true
+    }
   }
 }
 </script>
