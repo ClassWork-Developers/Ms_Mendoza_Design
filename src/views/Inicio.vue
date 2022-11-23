@@ -10,13 +10,13 @@
             <div>
               <button class="btn ghost-gradient">
                 <span class="ghost-text">
-                  Ver contenido
+                <router-link to="/contenido" @click="vista">Ver contenido</router-link>
                 </span>
               </button>
             </div>
             <div>
               <button class="btn primary">
-                Contáctame
+                <router-link to="/formulario" @click="vista">Contáctame</router-link>
               </button>
             </div>
           </div>
@@ -34,7 +34,18 @@
         </div>
         <div class="container__descriptions">
           <div>
-            <p class="h5">Texto descriptivo</p>
+            <p class="h5 text-special text-uppercase">
+              Edits creativos y
+              <span class="d-block">
+                publicidades
+              </span>
+            </p>
+            <p class="small-block">
+              Adaptados también con la
+              <span class="d-block">
+                personalidad de tu marca
+              </span>
+            </p>
           </div>
           <div class="align-right">
             <p class="small-block">
@@ -44,7 +55,10 @@
               perfil profesional
             </p>
             <p class="text-container">
-              Déjame desatar mi creatividad con una imagen tuya incluso para fines vocacionales
+              Déjame desatar mi creatividad con una
+              <span class="d-block">
+                imagen tuya incluso para fines vocacionales
+              </span>
             </p>
           </div>
         </div>
