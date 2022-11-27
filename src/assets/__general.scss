@@ -189,6 +189,19 @@ p {
   border-image-source: linear-gradient(to left, $primario, $secundario);
   border-radius: 10px;
 }
+.input-text {
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: auto;
+
+  & label {
+    color: $secundario;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+}
 
 // Footer
 .footer {

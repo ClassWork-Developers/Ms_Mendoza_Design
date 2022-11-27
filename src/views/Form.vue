@@ -40,23 +40,23 @@
       </div>
     </div>
     <div class="col-4">
-      <div class="form">
+      <div class="form d-flex column">
         <p class="h5">Formulario de contacto</p>
-        <div>
+        <div class="input-text">
           <input type="text" id="name">
           <label for="name">Nombre y apellido</label>
         </div>
-        <div>
+        <div class="input-text">
           <input type="text" id="correo">
           <label for="correo">Correo</label>
         </div>
-        <div>
+        <div class="input-text">
           <input type="tel" id="telefono">
           <label for="telefono">Teléfono</label>
         </div>
-        <div>
+        <div class="input-text">
           <textarea id="asunto" cols="30" rows="10"></textarea>
-          <label for="asunto">Teléfono</label>
+          <label for="asunto">Asunto</label>
         </div>
       </div>
     </div>
