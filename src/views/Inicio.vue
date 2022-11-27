@@ -10,13 +10,13 @@
             <div>
               <button class="btn ghost-gradient">
                 <span class="ghost-text">
-                <router-link to="/contenido" @click="vista">Ver contenido</router-link>
+                <router-link to="/contenido">Ver contenido</router-link>
                 </span>
               </button>
             </div>
             <div>
               <button class="btn primary">
-                <router-link to="/formulario" @click="vista">Contáctame</router-link>
+                <router-link to="/formulario">Contáctame</router-link>
               </button>
             </div>
           </div>
