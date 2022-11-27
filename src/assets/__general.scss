@@ -182,8 +182,7 @@ p {
   }
 }
 .form {
-  border: 3px solid;
-  border: solid;
+  border: .4rem solid;
   border-image-slice: 1;
   color: linear-gradient(to left, $primario, $secundario);
   border-image-source: linear-gradient(to left, $primario, $secundario);
@@ -191,11 +190,29 @@ p {
 }
 .input-text {
   position: relative;
-  padding-top: 1rem;
+  padding-top: 1.2rem;
   padding-bottom: 1rem;
-  margin: auto;
+  margin: .5rem 1rem 0 1rem;
 
-  & label {
+  input, textarea {
+    padding: .5rem;
+    background: none;
+    border: .3rem solid;
+    border-image-slice: 1;
+    color: linear-gradient(to left, $primario, $secundario);
+    border-image-source: linear-gradient(to left, $primario, $secundario);background-color: transparent;
+    caret-color: $secundario;
+    color: $secundario;
+    font-size: 1.2rem;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+  input {
+    height: 2.5rem;
+  }
+  label {
     color: $secundario;
     left: 0;
     top: 0;
