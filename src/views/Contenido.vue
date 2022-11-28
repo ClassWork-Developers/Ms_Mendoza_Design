@@ -19,9 +19,11 @@
         <p class="h3">{{item.tittle}}</p>
       </div>
       <div class="align-self-end">
-        <button class="btn primary" @click="mostrarModal(index)">
-          ¡Lo quiero!
-        </button>
+        <router-link to="/formulario">
+          <button class="btn primary">
+            ¡Lo quiero!
+          </button>
+        </router-link>
       </div>
       <font-awesome-icon
         class="close-icon align-self-start"

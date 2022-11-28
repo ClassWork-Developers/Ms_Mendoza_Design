@@ -8,7 +8,7 @@
           <p class="h5">asdasdasd</p>
           <div class="d-flex align-items-center">
             <div>
-              <router-link to="/contenido" @click="vista">
+              <router-link to="/contenido">
                <button class="btn ghost-gradient">
                   <span class="ghost-text">
                     Ver contenido
@@ -17,7 +17,7 @@
               </router-link>
             </div>
             <div>
-              <router-link to="/formulario" @click="vista">
+              <router-link to="/formulario">
                 <button class="btn primary">
                   Contáctame
                 </button>

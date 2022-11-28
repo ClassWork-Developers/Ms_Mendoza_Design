@@ -5,13 +5,13 @@
         <i class="logo" />
       </div>
       <div class="d-flex align-items-center">
-        <p class="px-2" @click="vista">
+        <p class="px-2">
           <router-link to="/">Inicio</router-link>
         </p>
-        <p class="px-2" @click="vista">
-          <router-link to="/contenido" @click="vista">Contenido</router-link>
+        <p class="px-2">
+          <router-link to="/contenido">Contenido</router-link>
         </p>
-        <p class="px-2" @click="vista">
+        <p class="px-2">
           <router-link to="/acercademi">Acerca de mi</router-link>
         </p>
         <p class="redes">
@@ -28,19 +28,25 @@
 <script>
 export default {
   name: 'BarraNavegacion',
-  data() {
-    return {
-      HomePage: ''
-    }
-  },
-  mounted() {
-    this.vista()
-  },
-  methods: {
-    vista() {
-      this.HomePage = this.$router.currentRoute.name == 'inicio' ? true : false
+  props: {
+    HomePage : {
+      type: Boolean,
+      default: false
     }
   }
+  // data() {
+  //   return {
+  //     HomePage: ''
+  //   }
+  // }
+  // mounted() {
+  //   this.vista()
+  // },
+  // methods: {
+  //   vista() {
+  //     this.HomePage = this.$router.currentRoute.name == 'inicio' ? true : false
+  //   }
+  // }
 }
 </script>
 

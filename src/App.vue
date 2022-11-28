@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <BarraNavegacion />
+    <BarraNavegacion 
+      :home-page="HomePage"
+    />
     <router-view/>
     <FooterPage />
   </div>
@@ -15,6 +17,22 @@ export default {
   components: {
     BarraNavegacion,
     FooterPage
+  },
+  data() {
+    return {
+      HomePage: ''
+    }
+  },
+  mounted() {
+    this.vista()
+    setInterval(() => {
+      this.vista();
+    }, (1000));
+  },
+  methods: {
+    vista() {
+      this.HomePage = this.$router.currentRoute.name == 'inicio' ? true : false
+    }
   }
 }
 </script>
