@@ -17,6 +17,7 @@
       <img :src="item.url" alt="" class="col-4">
       <div class="col px-2">
         <p class="h3">{{item.tittle}}</p>
+        <p class="h2">{{item.description}}</p>
       </div>
       <div class="align-self-end">
         <router-link to="/formulario">
@@ -45,42 +46,42 @@ export default {
         {
           tittle : "Everything it's Ok :)",
           url: require('../assets/images/content/image_1.jpg'),
-          description: ""
+          description: "representa el positivismo en un momento malo y/o de tension"
         },
         {
           tittle : "Is that a supra??!!",
           url: require('../assets/images/content/image_2.jpg'),
-          description: ""
+          description: "Referencia al fanatismo que hay alrededor del vehiculo toyota supra"
         },
         {
-          tittle : "Space",
+          tittle : "Its enough space for you",
           url: require('../assets/images/content/image_3.jpg'),
-          description: ""
+          description: "Representa el necesitar un espacio solitario para descanzar del dia a dia"
         },
         {
           tittle : "Lets ryde togheter",
           url: require('../assets/images/content/image_4.jpg'),
-          description: ""
+          description: "Invitacion para una carrera"
         },
         {
           tittle : "Cruspiros cake",
           url: require('../assets/images/content/image_5.jpg'),
-          description: ""
+          description: "Pequeño brandeo para una pastelería dedicada a los suspiros"
         },
         {
           tittle : "Lets take a trip",
           url: require('../assets/images/content/image_6.jpg'),
-          description: ""
+          description: "Invitación a un viaje"
         },
         {
           tittle : "Follow your dreams",
           url: require('../assets/images/content/image_7.jpg'),
-          description: ""
+          description: "Poster motivador para seguir tus sueños"
         },
         {
           tittle : "Stay with me",
           url: require('../assets/images/content/image_8.jpg'),
-          description: ""
+          description: "Petición para que te quedes con esa persona especial"
         }
       ],
       modal: false,
