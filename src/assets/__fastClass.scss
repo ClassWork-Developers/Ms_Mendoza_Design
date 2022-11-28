@@ -44,6 +44,9 @@
 .img-width {
   width: inherit;
 }
+.img-a{
+  width: fit-content;
+}
 
 // Display
 .d-block {
@@ -80,6 +83,11 @@
 }
 
 // Columnas (Col-)
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
 .col-1 {
   flex: 0 0 8.333333%;
   max-width: 8.333333%;

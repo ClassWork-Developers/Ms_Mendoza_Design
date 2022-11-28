@@ -120,7 +120,7 @@ p {
   justify-content: space-around;
 
   & .background{
-    background: rgba(0, 0, 0, 0.54);
+    background: $transparent-background;
     filter: blur(54px);
     position: absolute;
     width: 35rem;
@@ -155,6 +155,9 @@ p {
   margin-top: 3rem;
   padding-bottom: 3rem;
 
+  &__preview {
+    margin: auto 2rem;
+  }
   &-benefits {
     width:calc(100vw/1.3);
     display: flex;
@@ -181,6 +184,51 @@ p {
     justify-content: space-around;
   }
 }
+
+.img-preview {
+  position: relative;
+
+  .img-preview__description {
+    padding: 3rem;
+    display: none;
+    background: #00000085;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    left: 0;
+    top: 0;
+  }
+
+  .img-preview__boton {
+    display: none;
+    z-index: 99;
+    bottom: 0;
+    right: 0;
+  }
+
+  &:hover img {
+    filter: blur(2px);
+  }
+
+  &:hover .img-preview__description, &:hover .img-preview__boton {
+    display: block;
+    position: absolute;
+  }
+}
+
+// Modal
+.modal {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $transparent-background;
+  z-index: 101;
+}
+
 .form {
   border: .4rem solid;
   border-image-slice: 1;

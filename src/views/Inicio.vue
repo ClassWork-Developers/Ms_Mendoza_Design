@@ -8,16 +8,20 @@
           <p class="h5">asdasdasd</p>
           <div class="d-flex align-items-center">
             <div>
-              <button class="btn ghost-gradient">
-                <span class="ghost-text">
-                <router-link to="/contenido" @click="vista">Ver contenido</router-link>
-                </span>
-              </button>
+              <router-link to="/contenido" @click="vista">
+               <button class="btn ghost-gradient">
+                  <span class="ghost-text">
+                    Ver contenido
+                  </span>
+                </button>
+              </router-link>
             </div>
             <div>
-              <button class="btn primary">
-                <router-link to="/formulario" @click="vista">Contáctame</router-link>
-              </button>
+              <router-link to="/formulario" @click="vista">
+                <button class="btn primary">
+                  Contáctame
+                </button>
+              </router-link>
             </div>
           </div>
         </div>
@@ -62,7 +66,7 @@
             </p>
           </div>
         </div>
-        <div class="container-benefits__image align-self-end">
+        <div class="container-benefits__image">
           <img class="img-width" src="../assets/images/image3.jpg" alt="">
           <img class="img-width preview-absolute" src="../assets/images/image2.jpg" alt="">
         </div>

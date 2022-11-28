@@ -16,7 +16,7 @@
         </p>
         <p class="redes">
           <font-awesome-icon class="p-1" icon="fa-brands fa-facebook" />
-          <font-awesome-icon class="p-1" icon="fa-brands fa-twitter" />
+          <font-awesome-icon class="p-1" icon="fa-brands fa-instagram" />
           <font-awesome-icon class="p-1" icon="fa-brands fa-telegram" />
           <font-awesome-icon class="p-1" icon="fa-brands fa-whatsapp" />
         </p>
