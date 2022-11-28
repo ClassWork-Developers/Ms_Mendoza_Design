@@ -235,6 +235,15 @@ p {
   color: linear-gradient(to left, $primario, $secundario);
   border-image-source: linear-gradient(to left, $primario, $secundario);
   border-radius: 10px;
+  padding-bottom: 2rem;
+}
+
+.form-btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -1.5rem;
 }
 .input-text {
   position: relative;
