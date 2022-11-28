@@ -60,7 +60,7 @@
         </div>
         <p v-if="submitted" class="h-3 align-center">Tu petición se ha enviando</p>
         <div class="form-btn">
-          <button @click="saveForm" class="btn primary mx-auto">
+          <button @click="saveForm" :disabled="submitted" :class="['btn primary mx-auto', {'disabled' : submitted}]">
             Enviar
           </button>
         </div>

@@ -5,6 +5,10 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Cooper Black', sans-serif;
+
+  &:focus-visible {
+    outline: none;
+  }
 }
 html {
   background-color: $terciario;
@@ -75,6 +79,13 @@ p {
     border: none;
     background:  linear-gradient(120deg, $secundario, $primario);
     font-weight: bold;
+
+    &.disabled {
+      filter: brightness(0.5);
+    }
+  }
+  &:focus, &:hover {
+    filter: drop-shadow(2px 4px 6px black);
   }
 }
 
@@ -262,9 +273,6 @@ p {
     color: $secundario;
     font-size: 1.2rem;
 
-    &:focus-visible {
-      outline: none;
-    }
   }
   input {
     height: 2.5rem;
