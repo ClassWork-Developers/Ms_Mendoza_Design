@@ -6,17 +6,17 @@
       </div>
       <div class="d-flex align-items-center">
         <router-link to="/">
-          <p :class="['px-2', { 'active' : $router.currentRoute.path == '/'}]">
+          <p :class="['px-2', { 'active' : Page == 'inicio'}]">
             Inicio
           </p>
         </router-link>
         <router-link to="/contenido">
-          <p :class="['px-2', { 'active' : $router.currentRoute.path == '/contenido'}]">
+          <p :class="['px-2', { 'active' : Page == 'contenido'}]">
             Contenido
           </p>
         </router-link>
         <router-link to="/acercademi">
-          <p :class="['px-2', { 'active' : $router.currentRoute.path == '/acercademi'}]">
+          <p :class="['px-2', { 'active' : Page == 'aboutme'}]">
             Acerca de mi
           </p>
         </router-link>
@@ -38,6 +38,10 @@ export default {
     HomePage : {
       type: Boolean,
       default: false
+    },
+    Page : {
+      type: String,
+      default: ''
     }
   }
 }

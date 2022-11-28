@@ -2,6 +2,7 @@
   <div id="app">
     <BarraNavegacion 
       :home-page="HomePage"
+      :Page="Page"
     />
     <router-view/>
     <FooterPage />
@@ -20,7 +21,8 @@ export default {
   },
   data() {
     return {
-      HomePage: ''
+      HomePage: '',
+      Page: ''
     }
   },
   mounted() {
@@ -32,6 +34,7 @@ export default {
   methods: {
     vista() {
       this.HomePage = this.$router.currentRoute.name == 'inicio' ? true : false
+      this.Page = this.$router.currentRoute.name
     }
   }
 }
