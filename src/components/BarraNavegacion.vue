@@ -5,15 +5,21 @@
         <i class="logo" />
       </div>
       <div class="d-flex align-items-center">
-        <p class="px-2">
-          <router-link to="/">Inicio</router-link>
-        </p>
-        <p class="px-2">
-          <router-link to="/contenido">Contenido</router-link>
-        </p>
-        <p class="px-2">
-          <router-link to="/acercademi">Acerca de mi</router-link>
-        </p>
+        <router-link to="/">
+          <p :class="['px-2', { 'active' : $router.currentRoute.path == '/'}]">
+            Inicio
+          </p>
+        </router-link>
+        <router-link to="/contenido">
+          <p :class="['px-2', { 'active' : $router.currentRoute.path == '/contenido'}]">
+            Contenido
+          </p>
+        </router-link>
+        <router-link to="/acercademi">
+          <p :class="['px-2', { 'active' : $router.currentRoute.path == '/acercademi'}]">
+            Acerca de mi
+          </p>
+        </router-link>
         <p class="redes">
           <font-awesome-icon class="p-1" icon="fa-brands fa-facebook" />
           <font-awesome-icon class="p-1" icon="fa-brands fa-instagram" />

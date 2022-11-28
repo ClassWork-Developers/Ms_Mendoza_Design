@@ -15,7 +15,7 @@
     </div>
     <div v-if="modal" class="modal">
       <img :src="item.url" alt="" class="col-4">
-      <div class="col">
+      <div class="col px-2">
         <p class="h3">{{item.tittle}}</p>
       </div>
       <div class="align-self-end">
