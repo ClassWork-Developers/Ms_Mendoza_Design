@@ -59,6 +59,7 @@ p {
   border-radius: 1rem;
   font-weight: bold;
   color: $terciario;
+  cursor: pointer;
 
   &.ghost-gradient {
     background: none;

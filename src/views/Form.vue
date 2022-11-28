@@ -100,7 +100,6 @@ export default {
           .post("/form", data)
           .then(response => {
             this.form.id = response.data.id;
-            console.log(response.data);
             this.submitted = true;
           })
           .catch(e => {
