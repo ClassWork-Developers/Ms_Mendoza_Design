@@ -34,19 +34,6 @@ export default {
       default: false
     }
   }
-  // data() {
-  //   return {
-  //     HomePage: ''
-  //   }
-  // }
-  // mounted() {
-  //   this.vista()
-  // },
-  // methods: {
-  //   vista() {
-  //     this.HomePage = this.$router.currentRoute.name == 'inicio' ? true : false
-  //   }
-  // }
 }
 </script>
 
