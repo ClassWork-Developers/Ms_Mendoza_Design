@@ -39,8 +39,8 @@
         </div>
       </div>
     </div>
-    <div class="col-4 mx-2">
-      <div class="form" v-if="!submitted">
+    <div class="col-4 mx-2 p-relative">
+      <div class="form">
         <p class="h5 align-center py-2">Formulario de contacto</p>
         <div class="input-text d-flex">
           <input type="text" id="name" class="col-12" required v-model="form.name">
@@ -58,11 +58,12 @@
           <textarea id="asunto" cols="30" rows="10" class="col-12" v-model="form.affairs"></textarea>
           <label for="asunto">Asunto</label>
         </div>
-        <button v-on:click="saveForm" class="btn btn-success">Submit</button>
-      </div>
-      <div v-else>
-        <h4>You submitted successfully!</h4>
-        <button class="btn btn-success" v-on:click="newForm">Add</button>
+        <p v-if="submitted" class="h-3 align-center">Tu petición se ha enviando</p>
+        <div class="form-btn">
+          <button @click="saveForm" class="btn primary mx-auto">
+            Enviar
+          </button>
+        </div>
       </div>
     </div>
   </section>
@@ -94,7 +95,7 @@ export default {
           number: this.form.number,
           affairs: this.form.affairs
         };
-  
+
         http
           .post("/form", data)
           .then(response => {
@@ -106,7 +107,9 @@ export default {
             console.log(e);
           });
       }
-
+      setTimeout(() => {
+        this.newForm()
+      }, 5000);
     },
     newForm() {
       this.submitted = false;
