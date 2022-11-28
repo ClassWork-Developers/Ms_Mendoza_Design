@@ -110,7 +110,13 @@ export default {
     },
     newForm() {
       this.submitted = false;
-      this.form = {};
+      this.form = {
+        id: 0,
+        name: "",
+        mail: "",
+        number: "",
+        affairs: ""
+      };
     }
   }
 }
