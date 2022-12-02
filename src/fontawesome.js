@@ -5,11 +5,12 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 import {
-  faXmark
+  faXmark, faPoo
 } from '@fortawesome/free-solid-svg-icons'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-library.add(faFacebook, faInstagram, faTelegram, faWhatsapp, faXmark)
+library.add(faFacebook, faInstagram, faTelegram, faWhatsapp,
+  faXmark, faPoo)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)

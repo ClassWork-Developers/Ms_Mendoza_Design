@@ -1,9 +1,9 @@
 <template>
   <section>
     <div class="d-flex flex-wrap justify-content-center container__preview">
-      <div v-for="(image, index) in images" :key="index" class="col-3 mx-2 img-preview">
+      <div v-for="(image, index) in images" :key="index" class="col-5 col-md-3 mx-1 mx-sm-2 img-preview">
         <div class="img-preview__description">
-          <p class="h5"> {{image.tittle}}</p>
+          <p> {{image.tittle}}</p>
         </div>
         <div class="img-preview__boton">
           <button class="btn primary" @click="mostrarModal(index)">
@@ -14,24 +14,28 @@
       </div>
     </div>
     <div v-if="modal" class="modal">
-      <img :src="item.url" alt="" class="col-4">
-      <div class="col px-2">
+      <div class="order-1 order-md-0 col col-md-4">
+        <img :src="item.url" alt="" class="img-width">
+      </div>
+      <div class="order-1 order-md-0 col px-2">
         <p class="h3">{{item.tittle}}</p>
         <p class="h2">{{item.description}}</p>
       </div>
-      <div class="align-self-end">
+      <div class="order-1 order-md-0 align-self-end">
         <router-link to="/formulario">
           <button class="btn primary">
             ¡Lo quiero!
           </button>
         </router-link>
       </div>
-      <font-awesome-icon
-        class="close-icon align-self-start"
-        icon="fa-solid fa-xmark"
-        @click="modal = false"
-      />
-    </div>
+      <div class="w-100 align-right">
+        <font-awesome-icon
+          class="close-icon align-self-start"
+          icon="fa-solid fa-xmark"
+          @click="modal = false"
+        />
+      </div>
+      </div>
   </section>
 </template>
 

@@ -4,7 +4,11 @@
       <div>
         <i class="logo" />
       </div>
-      <div class="d-flex align-items-center">
+      <input type="checkbox" id="nav-check">
+      <label for="nav-check">
+        <font-awesome-icon icon="fa-solid fa-poo" />
+      </label>
+      <div>
         <router-link to="/">
           <p :class="['px-2', { 'active' : Page == 'inicio'}]">
             Inicio

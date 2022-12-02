@@ -2,7 +2,7 @@
   <section>
     <div class="landing-page">
       <div>
-        <span class="landing-page__content background"></span>
+        <span class="background"></span>
         <div class="landing-page__content">
           <p class="h1">Ms_Mendoza_Design</p>
           <p class="h5">asdasdasd</p>
@@ -27,17 +27,17 @@
         </div>
       </div>
       <div class="landing-page__logo">
-        <i class="logo__big" />
+        <i class="logo__big col-12" />
       </div>
     </div>
-    <div class="container d-flex column align-items-center">
-      <p class="h3 text-special align-center mb-3">¿Qué puedo hacer por ti?</p>
-      <div class="container-benefits">
-        <div class="container-benefits__image align-self-start">
-            <img class="img-width" src="../assets/images/image1.jpg" alt="">
-        </div>
-        <div class="container__descriptions">
-          <div>
+    <p class="h3 text-special align-center mb-3 p-2">¿Qué puedo hacer por ti?</p>
+    <div class="d-flex w-100 justify-content-center container-benefits">
+      <div class="col-3 container-benefits__image">
+        <img class="img-width" src="../assets/images/image1.jpg" alt="">
+      </div>
+      <div class="col container-benefits__descriptions">
+        <div class="d-flex column">
+          <div class="col-auto mx-auto">
             <p class="h5 text-special text-uppercase">
               Edits creativos y
               <span class="d-block">
@@ -51,7 +51,20 @@
               </span>
             </p>
           </div>
-          <div class="align-right">
+          <div class="overflow-scroll d-md-none my-2">
+            <div class="d-flex overflow-hidden w-50rem py-1">
+              <div class="col container-benefits__image responsive">
+                <img class="img-width" src="../assets/images/image1.jpg" alt="">
+              </div>
+              <div class="col container-benefits__image responsive">
+                <img class="img-width" src="../assets/images/image3.jpg" alt="">
+              </div>
+              <div class="col container-benefits__image responsive">
+                <img class="img-width" src="../assets/images/image2.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-auto mx-auto align-right">
             <p class="small-block">
               Diseños creativos con tu
             </p>
@@ -66,18 +79,20 @@
             </p>
           </div>
         </div>
-        <div class="container-benefits__image">
-          <img class="img-width" src="../assets/images/image3.jpg" alt="">
-          <img class="img-width preview-absolute" src="../assets/images/image2.jpg" alt="">
-        </div>
+      </div>
+      <div class="col-3 container-benefits__image">
+        <img class="img-width" src="../assets/images/image3.jpg" alt="">
+        <img class="img-width preview-absolute" src="../assets/images/image2.jpg" alt="">
       </div>
     </div>
-    <p class="h3 special">
-      "I made designs with the heart"
-    </p>
-    <div class="mx-auto w-auto">
-      <img class="img-width" src="../assets/images/image4.png" alt="">
-    </div>
+    <!-- <div class="d-flex column">
+        <p class="col h3 special">
+          "I made designs with the heart"
+        </p>
+      <div class="col-9 mx-auto">
+        <img class="img-width" src="../assets/images/image4.png" alt="">
+      </div>
+    </div> -->
   </section>
 </template>
 

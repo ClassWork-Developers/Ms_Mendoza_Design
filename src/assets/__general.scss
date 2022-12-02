@@ -17,25 +17,39 @@ html {
 // Texto
 .h1 {
   color: $secundario;
-  font-size: 3rem;
+  font-size: 1.8rem;
+
+  @media screen and(min-width: 576px) {
+    font-size: 3rem;
+  }
 }
 .h3 {
-  font-size: 3.5rem;
+  font-size: 2rem;
   &.special {
     text-transform: uppercase;
     background: linear-gradient(180deg, $secundario -31.16%, $primario 89.04%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: 7rem auto;
-    width: calc(100vh/1);
+    margin: 2rem auto;
     text-align: center;
+  }
+  @media screen and(min-width: 576px) {
+    margin: 7rem auto;
+    font-size: 3.5rem;
   }
 }
 .h5 {
-  font-size: 2rem;
+  font-size: 1.3rem;
+  @media screen and(min-width: 576px) {
+    font-size: 2rem;
+  }
 }
 p {
   color: $secundario;
+  font-size: .7rem;
+  @media screen and (min-width: 576px) {
+    font-size: 1rem;
+  }
 }
 .text-special {
   background: linear-gradient(90deg, $secundario 50%, $primario 70%);
@@ -44,7 +58,10 @@ p {
 }
 .small-block {
   display: block;
-  font-size: 1.2rem;
+  font-size: .9rem;
+  @media screen and(min-width: 576px) {
+    font-size: 1.2rem;
+  }
 }
 .text-secundario {
   color: $terciario;
@@ -52,14 +69,16 @@ p {
 
 // Botones
 .btn {
-  padding: 1rem 2rem;
-  margin: 1rem;
+  padding: .5rem;
+  margin: .5rem;
   display: block;
   text-transform: uppercase;
   border-radius: 1rem;
   font-weight: bold;
   color: $terciario;
   cursor: pointer;
+  font-size: .8rem;
+  font-weight: 100;
 
   &.ghost-gradient {
     background: none;
@@ -88,6 +107,13 @@ p {
   &:focus, &:hover {
     filter: drop-shadow(2px 4px 6px black);
   }
+
+  @media screen and (min-width: 576px) {
+    margin: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: normal;
+  }
 }
 
 // Barra de navegación
@@ -111,13 +137,49 @@ p {
     font-size: 1.3rem;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     list-style: none;
     background-image: linear-gradient(to top, #00000000, #000000);
     width: 100%;
-  }
+    position: relative;
 
+    input {
+      display: none;
+    }
+    label {
+      font-size: 2rem;
+    }
+
+    & div:last-child {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: fixed;
+      background-color: $terciario;
+      transition: all .5s ease-in;
+      right: -18rem;
+      top: 10rem;
+      padding: 2rem;
+      line-height: 3;
+    }
+    & input:checked ~div:last-child {
+      right: 2rem;
+    }
+    @media screen and (min-width: 576px ) {
+      padding: 2rem;
+
+      label {
+        display: none;
+      }
+      & div:last-child {
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+        line-height: normal;
+      }
+    }
+  }
   .active {
     border-bottom: .3rem solid;
   }
@@ -125,9 +187,11 @@ p {
 
 // Landing page
 .landing-page {
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   display: flex;
-  height: 80vh;
+  flex-direction: column;
+  height: 100vh;
   background-image: url("/src/assets/images/navbar-image.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -137,66 +201,106 @@ p {
 
   & .background{
     background: $transparent-background;
-    filter: blur(54px);
+    filter: blur(10px);
     position: absolute;
-    width: 35rem;
-    height: 15rem;
+    width: calc(100vw/1.3);
+    height: calc(100vh/4.5);
+    @media screen and (min-width: 576px) {
+      filter: blur(54px);
+      width: 35rem;
+      height: 15rem;
+    }
   }
   &__content {
     padding: 1rem;
-    margin: 1rem 6rem;
     padding-bottom: 1rem;
     position: relative;
+    @media screen and (min-width: 576px) {
+      margin: 1rem 6rem;
+    }
   }
   &__logo {
     right: 4rem;
     bottom: 0rem;
+    display: none;
+    @media screen and (min-width: 576px) {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 576px) {
+    height: 80vh;
+    background-position: bottom;
   }
 }
 
 .about-me {
   &__text {
     font-size: 2.5rem;
-    width: 20rem;
+    @media screen and (min-width: 768px) {
+      width: 20rem;
+    }
+  }
+  &__image {
+    width: fit-content;
   }
   &__logo {
     position: absolute;
-    bottom: 0;
-    right: -6rem;
+    bottom: .5rem;
+    right: .5rem;
+    @media screen and (min-width: 768px) {
+      right: -6rem;
+      bottom: 0;
+    }
   }
 }
 
 // Contenedores
 .container {
-  padding-bottom: 3rem;
+  // padding-bottom: 3rem;
 
   &__preview {
-    margin: auto 2rem;
+    @media screen and (min-width: 576px) {
+      margin: auto 2rem;
+    }
   }
   &-benefits {
     width:calc(100vw/1.3);
-    display: flex;
-    height: 40rem;
-    justify-content: center;
-
     &__image {
-      margin: 3rem 2rem;
-      width: 219.05px;
-      height: 273.31px;
-      transform: rotate(9deg);
+      display: none;
+      margin: auto 1rem;
       position: relative;
-
       & .preview-absolute {
         position: absolute;
         right: -6rem;
         bottom: -12rem;
       }
+      &.responsive {
+        display: block;
+      }
+
+      @media screen and(min-width: 576px) {
+        transform: rotate(9deg);
+        margin: 3rem 2rem;
+        display: block;
+        &.responsive {
+          display: none;
+        }
+      }
+    }
+    @media screen and(min-width: 576px) {
+      height: 40rem;
     }
   }
-  &__descriptions {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  &-benefits__descriptions {
+    height: 100vh;
+    @media screen and (min-width: 576px) {
+      height: auto;
+    }
+    & >div {
+      @media screen and (min-width: 576px) {
+        height: 100%;
+      }
+    }
   }
 }
 
@@ -204,7 +308,7 @@ p {
   position: relative;
 
   .img-preview__description {
-    padding: 3rem;
+    padding: 1rem;
     display: none;
     background: #00000085;
     height: 100%;
@@ -212,9 +316,15 @@ p {
     z-index: 99;
     left: 0;
     top: 0;
+    p {
+      font-size: 1rem;
+    }
+    @media screen and (min-width: 576px) {
+      padding: 3rem;
+    }
   }
 
-  .img-preview__boton {
+  &__boton {
     display: none;
     z-index: 99;
     bottom: 0;
@@ -235,13 +345,18 @@ p {
 .modal {
   position: fixed;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 7rem;
+  padding: 4rem 1rem;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: $transparent-background;
   z-index: 101;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    padding: 7rem;
+  }
 }
 
 .form {
@@ -298,4 +413,16 @@ p {
   align-items: center;
   flex-wrap: wrap;
   background: $secundario;
+  &-logo {
+    display: none;
+  }
+  @media screen and (min-width: 576px) {
+    &-logo {
+      display: block;
+    }
+    &-logo__responsive {
+      display: none;
+    }
+    flex-direction: row;
+  }
 }

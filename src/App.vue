@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <BarraNavegacion 
+    <BarraNavegacion
       :home-page="HomePage"
       :Page="Page"
     />
