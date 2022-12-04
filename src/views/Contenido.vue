@@ -14,14 +14,21 @@
       </div>
     </div>
     <div v-if="modal" class="modal align-sm-content-start">
-      <div class="col-7 col-sm-6 order-2 order-sm-1 order-md-0 ">
+      <div class="col-7 col-sm-6 col-lg-4 order-2 order-sm-1 order-md-0 ">
         <img :src="item.url" alt="" class="img-width">
       </div>
-      <div class="order-1 order-md-0 col px-2">
-        <p class="h3">{{item.tittle}}</p>
+      <div class="col-auto col-sm order-1 order-md-0 px-2 mb-1">
+        <p class="h3 my-2">{{item.tittle}}</p>
         <p class="h2">{{item.description}}</p>
+        <div class="my-3 d-none d-md-block">
+          <router-link to="/formulario">
+            <button class="btn primary ml-auto">
+              ¡Lo quiero!
+            </button>
+          </router-link>
+        </div>
       </div>
-      <div class="col-sm-12 order-3  order-md-0 align-self-end">
+      <div class="col-sm-12 order-3 d-md-none order-md-0 align-self-end">
         <router-link to="/formulario">
           <button class="btn primary ml-auto">
             ¡Lo quiero!

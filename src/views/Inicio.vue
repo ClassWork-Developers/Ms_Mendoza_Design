@@ -4,8 +4,13 @@
       <div>
         <span class="background"></span>
         <div class="landing-page__content">
-          <p class="h1">Ms_Mendoza_Design</p>
-          <p class="h5">asdasdasd</p>
+          <p class="h1 text-special">Ms_Mendoza_Design</p>
+          <p class="h5">
+            Creativo, full pana, flojo,
+            <span class="d-block">
+              amante de los animales y las camionetas
+            </span>
+          </p>
           <div class="d-flex align-items-center">
             <div>
               <router-link to="/contenido">
@@ -32,7 +37,7 @@
     </div>
     <p class="h3 text-special align-center mb-3 p-2">¿Qué puedo hacer por ti?</p>
     <div class="d-flex justify-content-center container-benefits">
-      <div class="col-3 container-benefits__image">
+      <div class="col-3 col-lg-2 container-benefits__image">
         <img class="img-width" src="../assets/images/image1.jpg" alt="">
       </div>
       <div class="col-12 col-md container-benefits__descriptions">
@@ -80,7 +85,7 @@
           </div>
         </div>
       </div>
-      <div class="col-3 container-benefits__image align-self-end">
+      <div class="col-3 col-lg-2 container-benefits__image align-self-end">
         <img class="img-width" src="../assets/images/image3.jpg" alt="">
         <img class="img-width preview-absolute" src="../assets/images/image2.jpg" alt="">
       </div>

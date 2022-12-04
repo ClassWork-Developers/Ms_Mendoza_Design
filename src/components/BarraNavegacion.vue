@@ -6,7 +6,7 @@
       </div>
       <input type="checkbox" id="nav-check">
       <label for="nav-check">
-        <font-awesome-icon icon="fa-solid fa-poo" />
+        <font-awesome-icon icon="fa-solid fa-burger" />
       </label>
       <div>
         <router-link to="/">
