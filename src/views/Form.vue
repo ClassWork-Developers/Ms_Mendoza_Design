@@ -58,7 +58,7 @@
           <textarea id="asunto" cols="30" rows="10" class="col-12" v-model="form.affairs"></textarea>
           <label for="asunto">Asunto</label>
         </div>
-        <p v-if="submitted" class="h-3 align-center">Tu petición se ha enviando</p>
+        <p v-if="msj" class="h-3 align-center">{{ msj }}</p>
         <div class="form-btn">
           <button @click="saveForm" :disabled="submitted" :class="['btn primary mx-auto', {'disabled' : submitted}]">
             Enviar
@@ -71,6 +71,7 @@
 
 <script>
 import http from "../http-common";
+import {validarMail} from '@/funciones/funciones.js';
 
 export default {
   name: 'FormContact',
@@ -83,12 +84,13 @@ export default {
         number: "",
         affairs: ""
       },
+      msj: '',
       submitted: false
     };
   },
   methods: {
     saveForm() {
-      if (this.form.length > 4 || this.form.mail.length || this.form.number.length || this.form.affairs.length) {
+      if (this.form.name.length > 4 && validarMail(this.form.mail) && this.form.number.length && this.form.affairs.length) {
         var data = {
           name: this.form.name,
           mail: this.form.mail,
@@ -100,17 +102,21 @@ export default {
           .post("/form", data)
           .then(response => {
             this.form.id = response.data.id;
+            this.msj = 'Tu petición se ha enviando';
             this.submitted = true;
           })
           .catch(e => {
             console.log(e);
           });
+        setTimeout(() => {
+          this.newForm()
+        }, 5000);
+      } else {
+        this.msj = 'Verifica todos los datos';
       }
-      setTimeout(() => {
-        this.newForm()
-      }, 5000);
     },
     newForm() {
+      this.msj = '';
       this.submitted = false;
       this.form = {
         id: 0,
