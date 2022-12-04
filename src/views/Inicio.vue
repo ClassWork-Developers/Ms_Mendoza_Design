@@ -6,9 +6,9 @@
         <div class="landing-page__content">
           <p class="h1 text-special">Ms_Mendoza_Design</p>
           <p class="h5">
-            Creativo, full pana, flojo,
+            Diseñador gráfico en constante
             <span class="d-block">
-              amante de los animales y las camionetas
+              aprendizaje ansioso de nuevos retos
             </span>
           </p>
           <div class="d-flex align-items-center">
