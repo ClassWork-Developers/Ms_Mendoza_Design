@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="d-flex flex-wrap justify-content-center container__preview">
-      <div v-for="(image, index) in images" :key="index" class="col-5 col-md-3 mx-1 mx-sm-2 img-preview">
+      <div v-for="(image, index) in images" :key="index" class="col-5 col-sm-3 mx-1 mx-sm-2 img-preview">
         <div class="img-preview__description">
           <p> {{image.tittle}}</p>
         </div>
@@ -13,22 +13,22 @@
         <img :src="image.url" alt="" class="img-fit-content col-12">
       </div>
     </div>
-    <div v-if="modal" class="modal">
-      <div class="order-1 order-md-0 col col-md-4">
+    <div v-if="modal" class="modal align-sm-content-start">
+      <div class="col-7 col-sm-6 order-2 order-sm-1 order-md-0 ">
         <img :src="item.url" alt="" class="img-width">
       </div>
       <div class="order-1 order-md-0 col px-2">
         <p class="h3">{{item.tittle}}</p>
         <p class="h2">{{item.description}}</p>
       </div>
-      <div class="order-1 order-md-0 align-self-end">
+      <div class="col-sm-12 order-3  order-md-0 align-self-end">
         <router-link to="/formulario">
-          <button class="btn primary">
+          <button class="btn primary ml-auto">
             ¡Lo quiero!
           </button>
         </router-link>
       </div>
-      <div class="w-100 align-right">
+      <div class="w-100 col-sm-12 align-right">
         <font-awesome-icon
           class="close-icon align-self-start"
           icon="fa-solid fa-xmark"

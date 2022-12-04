@@ -36,7 +36,7 @@
       </div>
     </div>
     <div class="p-3">
-      <div class="about-me__image p-relative">
+      <div class="about-me__image p-relative mx-auto">
         <img class="img-width" src="../assets/images/about-me.png" alt="">
         <div class="about-me__logo">
           <i class="logo__big" />
