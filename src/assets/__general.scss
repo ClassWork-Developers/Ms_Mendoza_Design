@@ -294,12 +294,6 @@ p {
       height: 40rem;
     }
   }
-  &-benefits__descriptions {
-    height: 100vh;
-    @media screen and (min-width: 768px) {
-      height: auto;
-    }
-  }
 }
 .img-preview {
   position: relative;
