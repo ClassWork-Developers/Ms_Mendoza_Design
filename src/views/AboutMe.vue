@@ -1,11 +1,11 @@
 <template>
   <section class="container d-flex column md-row justify-content-center mx-auto">
     <div class="col-md-6 order-1 order-md-0 d-flex column sm-row flex-wrap justify-content-center p-3">
-      <div class="col col-sm-6 col-md-12 d-flex align-items-center justify-content-center my-2 my-md-3">
-        <div class="col-3 col-md-2">
+      <div class="col col-md-12 d-flex align-items-center justify-content-center justify-content-lg-start my-2 my-md-3">
+        <div class="container-icon">
           <img class="mx-auto img-width p-1" src="../assets/images/ubicacion.png" alt="">
         </div>
-        <div class="col px-2">
+        <div class="col col-sm-7 px-2">
           <p class="h5">Ubicación</p>
           <p>
             Venezuela Carabobo
@@ -15,11 +15,11 @@
           </p>
         </div>
       </div>
-      <div class="col col-sm-6 col-md-12 d-flex align-items-center justify-content-center my-2 my-md-3">
-        <div class="col-3 col-md-2">
+      <div class="col col-md-12 d-flex align-items-center justify-content-center justify-content-lg-start my-2 my-md-3">
+        <div class="container-icon">
           <img class="mx-auto img-width p-1" src="../assets/images/redes.png" alt="">
         </div>
-        <div class="col px-2">
+        <div class="col col-sm-7 px-2">
           <p class="h5">Contacto</p>
           <p>
             @m_mendoza_designs
@@ -29,11 +29,11 @@
           </p>
         </div>
       </div>
-      <div class="col col-md-12 d-flex align-items-center justify-content-center justify-content-md-start my-2 my-md-3">
-        <div class="col-3 col-sm-2">
+      <div class="col col-md-12 d-flex align-items-center justify-content-center justify-content-lg-start my-2 my-md-3">
+        <div class="container-icon">
           <img class="mx-auto img-width p-1" src="../assets/images/email.png" alt="">
         </div>
-        <div class="col-auto px-2">
+        <div class="col col-sm-7 px-2">
           <p class="h5">Correo</p>
           <p>
             M_MendozaDesigns@gmail.com
