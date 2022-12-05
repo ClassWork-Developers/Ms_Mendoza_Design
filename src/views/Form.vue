@@ -1,10 +1,10 @@
 <template>
-  <section class="d-flex justify-content-center container">
-    <div class="col-4 mx-2">
+  <section class="d-flex column md-row justify-content-center container mx-auto">
+    <div class="col-9 col-sm-6 col-md-4 mx-auto">
       <div class="d-flex column justify-content-center">
         <div class="d-flex align-items-center my-3">
-          <div class="col-4">
-            <img src="../assets/images/star.png" alt="">
+          <div class="col-2 col-md-4">
+            <img src="../assets/images/star.png" alt="" class="img-width">
           </div>
           <div class="px-2">
             <p class="h5">Creatividad</p>
@@ -20,15 +20,15 @@
               Cumplo con las expectativas en el tiempo deseado por mis clientes
             </p>
           </div>
-          <div class="col-4">
+          <div class="col-2 col-md-4">
             <div class="mx-auto w-auto">
-              <img src="../assets/images/times.png" alt="">
+              <img src="../assets/images/times.png" alt="" class="img-width">
             </div>
           </div>
         </div>
         <div class="d-flex align-items-center my-3">
-          <div class="col-4">
-            <img class="mx-auto" src="../assets/images/chat.png" alt="">
+          <div class="col-2 col-md-4">
+            <img src="../assets/images/chat.png" alt="" class="mx-auto img-width">
           </div>
           <div class="px-2">
             <p class="h5">Clientes satisfechos</p>
@@ -39,7 +39,7 @@
         </div>
       </div>
     </div>
-    <div class="col-4 mx-2 p-relative">
+    <div class="col-9 col-sm-6 col-md-4 mb-3 mx-auto p-relative">
       <div class="form">
         <p class="h5 align-center py-2">Formulario de contacto</p>
         <div class="input-text d-flex">

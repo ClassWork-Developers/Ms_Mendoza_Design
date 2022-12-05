@@ -1,7 +1,7 @@
 <template>
   <section>
-    <div class="d-flex flex-wrap justify-content-center container__preview">
-      <div v-for="(image, index) in images" :key="index" class="col-5 col-sm-3 mx-1 mx-sm-2 img-preview">
+    <div class="d-flex flex-wrap justify-content-center container__preview p-2 ">
+      <div v-for="(image, index) in images" :key="index" class="col-12 col-sm-3 my-1 mx-sm-2 img-preview">
         <div class="img-preview__description">
           <p> {{image.tittle}}</p>
         </div>
@@ -16,24 +16,24 @@
     <div v-if="modal" class="modal align-sm-content-start">
       <div class="col-7 col-sm-6 col-lg-4 order-2 order-sm-1 order-md-0 ">
         <img :src="item.url" alt="" class="img-width">
+        <div class="col-sm-12 order-3 d-sm-none order-md-0 align-self-end">
+        <router-link to="/formulario">
+          <button class="btn primary ml-auto">
+            ¡Lo quiero!
+          </button>
+        </router-link>
+      </div>
       </div>
       <div class="col-auto col-sm order-1 order-md-0 px-2 mb-1">
         <p class="h3 my-2">{{item.tittle}}</p>
         <p class="h2">{{item.description}}</p>
-        <div class="my-3 d-none d-md-block">
+        <div class="my-3 d-none d-sm-block">
           <router-link to="/formulario">
             <button class="btn primary ml-auto">
               ¡Lo quiero!
             </button>
           </router-link>
         </div>
-      </div>
-      <div class="col-sm-12 order-3 d-md-none order-md-0 align-self-end">
-        <router-link to="/formulario">
-          <button class="btn primary ml-auto">
-            ¡Lo quiero!
-          </button>
-        </router-link>
       </div>
       <div class="w-100 col-sm-12 align-right">
         <font-awesome-icon
