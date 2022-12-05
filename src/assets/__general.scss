@@ -210,7 +210,7 @@ p {
     filter: blur(10px);
     position: absolute;
     width: calc(100vw/1.2);
-    height: calc(100vh/4.5);
+    height: calc(100vh/3.5);
     @media screen and (min-width: 768px) {
       filter: blur(54px);
       width: 35rem;
